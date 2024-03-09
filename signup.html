@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Create Account</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="./signup.css">
+    <script src="./signup.js"> </script>
+</head>
+<body>
+    <div class="profile-container">
+        <h2>Create Your Profile</h2>
+        <form id="verificationForm" action="../set_password/password.html" method="post" onsubmit="return verifyOTP()">
+            <label for="name">First Name: </label>
+            <input type="text" id="name"  placeholder="Enter your first name" name="name" required>
+            <label for="name">Surname: </label>
+            <input type="text" id="name" placeholder="enter your surname" name="name" required>
+            <label for="dob">Date of Birth: </label>
+            <input type="date" name="dob" id="dob" placeholder="enter your date of birth" required>
+
+            <label for="phone_or_email">Phone Number or Email:</label>
+            <input type="text" id="phone_or_email" placeholder="Enter your phone number or email" name="phone_or_email" required>
+            <a href="#" onclick="sendOTP()">Send OTP!</a><br>
+            <input type="text" name="otp" id="otp" placeholder="enter otp" oninput="validateOTP(this.value)"><br>
+
+            <!-- <button type="button" id="submit" value="Send OTP" onclick="sendOTP()">send OTP</button><br> -->
+
+            <!-- <br><label for="password">Password:</label>
+            <input type="password" id="password" onkeyup="checkPasswordStrength()" required>
+            
+             <i class="fas fa-eye"></i> 
+
+            <div id="password-strength"></div>
+            
+            <label for="confirm_password">Confirm Password:</label>
+            <input type="password" id="confirm-password" name="confirm-password" onkeyup="validatePassword()">
+            <div id="password-mismatch"> </div><br> -->
+            
+            <button type="submit" id="submit" disabled >Verify OTP</button>
+        </form>  
+    </div>
+    <script language="javascript"> </script>
+</body>
+</html>

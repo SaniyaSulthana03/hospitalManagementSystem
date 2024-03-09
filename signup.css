@@ -1,0 +1,72 @@
+body {
+    font-family: Arial, sans-serif;
+    background-image: url(../img/wave.png);
+}
+.profile-container {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    background: #ecf4f1;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(99, 164, 96, 0.1);
+}
+a{
+	display: block;
+	text-align: right;
+	text-decoration: none;
+	color: #999;
+	font-size: 0.9rem;
+	transition: .3s;
+}
+
+a:hover{
+	color: #38d39f;
+}
+.profile-container h2 {
+    text-align: center;
+    color: #499174;
+}
+.profile-container label, .profile-container input, .profile-container select {
+    display: block;
+    margin-bottom: 10px;
+}
+.profile-container input[type="text"], .profile-container input[type="password"], .profile-container input[type="date"]{
+    width: 90%;
+    padding: 10px;
+    border: 1px solid #767575;
+    border-radius: 5px;
+}
+.profile-container select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+.profile-container button {
+    width: 95%;
+    padding: 10px;
+    background: #60a387;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.profile-container button:hover {
+    background: #0d4f37;
+}
+/* input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+#password-strength {
+    font-weight: bold;
+}
+#password-mismatch {
+    color: red;
+} */
